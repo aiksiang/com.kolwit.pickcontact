@@ -93,6 +93,7 @@ public class PickContactPlugin extends CordovaPlugin {
 					
 			
                     JSONObject contact = new JSONObject();
+                    contact.put("contactId", contactId);
 					contact.put("displayName", displayName);
 					contact.put("phoneNr", phoneNumber);
 					contact.put("emailAddress", email);
