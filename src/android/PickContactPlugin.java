@@ -28,7 +28,7 @@ public class PickContactPlugin extends CordovaPlugin {
 		if (action.equals("chooseContact")) {
 
             Intent intent = new Intent(Intent.ACTION_PICK,
-                     ContactsContract.Data.CONTENT_URI);
+                     ContactsContract.Contacts.CONTENT_URI);
             cordova.startActivityForResult(this, intent, CHOOSE_CONTACT);
 
             PluginResult r = new PluginResult(PluginResult.Status.NO_RESULT);
