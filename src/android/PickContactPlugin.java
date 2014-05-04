@@ -61,8 +61,8 @@ public class PickContactPlugin extends CordovaPlugin {
                                 new String[]{ contactId }, null);
                         phoneCursor.moveToFirst();
                         phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndexOrThrow(ContactsContract.CommonDataKinds.Phone.NUMBER));
+                        phoneCursor.close();
                     }
-                    phoneCursor.close();
 					
 					String email = "";
 					Cursor emailCur = context.getContentResolver().query(ContactsContract.CommonDataKinds.Email.CONTENT_URI, null, ContactsContract.CommonDataKinds.Email.CONTACT_ID + " = ?", new String[]{contactId}, null);
