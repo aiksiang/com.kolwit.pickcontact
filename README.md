@@ -1,5 +1,7 @@
 # PickContact plugin for Cordova 3.x and PhoneGap
 
+This fork edits some files to tailor to a project.
+
 This plugin is based on the plugins [com.monday.contact-chooser](https://github.com/monday-consulting/ContactChooser) and [org.apache.cordova.contacts](https://github.com/apache/cordova-plugin-contacts)
 It is fully inspired on the ContactChooser plugin, the trigger to get data is the same. The only thing different is the data that is returned. The plugin will return more data, for example phone numbers, emails and adresses (as in the cordova contacts plugin).
 
