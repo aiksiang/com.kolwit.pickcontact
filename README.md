@@ -17,7 +17,7 @@ Example Usage
 ```js
 window.plugins.PickContact.chooseContact(function (contactInfo) {
     setTimeout(function () { // use timeout to fix iOS alert problem
-        alert(contactInfo.contactID + " " + contactInfo.displayName + " " + contactInfo.emailAddress + " " + contactInfo.phoneNr + " " + contactInfo.address);
+        alert(contactInfo.contactId + " " + contactInfo.displayName + " " + contactInfo.emailAddress + " " + contactInfo.phoneNr + " " + contactInfo.address);
     }, 0);
 });
 ```
